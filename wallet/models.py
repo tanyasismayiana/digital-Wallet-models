@@ -13,12 +13,12 @@ class Customer(models.Model):
     email = models.EmailField()
     phoneNumber = models.CharField(max_length=14, null=True)
     age = models.SmallIntegerField()
-    profile_picture = models.ImageField(
-        upload_to='profile_picture/', null=True)
+    # profile_picture = models.ImageField(
+    #     upload_to='profile_picture/', null=True)
     pin = models.IntegerField()
     # nationality = models.Charfield(max_length=24)
     marital_status = models.CharField(max_length=10, null=True)
-    signature = models.ImageField()
+    # signature = models.ImageField()
     employment_status = models.CharField(max_length=10, null=True)
     id_Number = models.IntegerField()
 

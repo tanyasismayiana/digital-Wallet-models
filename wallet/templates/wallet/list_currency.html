@@ -1,0 +1,14 @@
+<table>
+    <th>
+        <td>amount</td>
+        <td>symbol</td>
+        <td>country</td>
+    </th>
+    {%for customer in customers%}
+    <tr>
+        <td>{{currency.amount}}</td>
+        <td>{{currency.symbol}}</td>
+        <td>{{customer.country}}</td>
+    </tr>
+    {% endfor %}
+</table>

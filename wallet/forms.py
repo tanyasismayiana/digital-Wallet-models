@@ -14,7 +14,7 @@ from .models import Reward
 class CustomerRegistrationForm(forms.ModelForm):
     class Meta:
         model = Customer
-        fields = "__all__"
+        fields = "__all__"        
 
 
 class CurrencyRegistrationForm(forms.ModelForm):
@@ -65,4 +65,6 @@ class RewardRegistrationForm(forms.ModelForm):
      class Meta:
         model = Reward
         fields = "__all__"   
+
+
 
