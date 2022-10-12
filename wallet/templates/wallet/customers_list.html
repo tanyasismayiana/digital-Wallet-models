@@ -8,13 +8,23 @@
 </head>
 <body>
     <table>
+
+        <th>
+            <td>First Name</td>
+            <td>Email</td>
+            <td>Age</td>
+            <td>Edit customer</td>
+
+        </th>
         {%for customer in customers%}
         <th>
+            
             <tr>
                 <td>{{customer.first_name}}</td>
                 <td>{{customer.last_name}}</td>
                 <td>{{customer.age}}</td>
-                <td><a href="{%url 'customer_profile' id=customer.id%}">view profile</a></td>
+                <!-- <td><a href="{%url 'customer_profile' id=customer.id%}">view profile</a></td> -->
+                
             </tr>
             {%endfor%}
         </th>

@@ -40,7 +40,7 @@ def edit_customer(request, id):
     customer = Customer.objects.get(id=id)
     if request.method == "POST":
 
-        form = CustomerRegistrationForm(request "POST", instance=customer)
+        form = CustomerRegistrationForm(request.POST,instance=customer)
         if form.is_valid():
             form.save()
             return redirect("customer_profile", id=customer.id)
