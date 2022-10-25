@@ -21,6 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('wallet/', include("wallet.urls")),
     path('wallet/', include("wallet.urls")),
+    path('api/',include("api.urls")),
 
+]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+Footer
 
-]

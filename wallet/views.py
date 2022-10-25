@@ -23,7 +23,6 @@ def register_customer(request):
         return render(request, 'wallet/register_customer.html',
                       {"form": form})
 
-
 def list_customers(request):
     customers = Customer.objects.all()
     return render(request, 'wallet/customer_list.html',
